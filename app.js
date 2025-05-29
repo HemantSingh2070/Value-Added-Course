@@ -24,7 +24,7 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 app.set("view engine", "ejs");
-app.set("views", "./view");
+app.set("views", "./views");
 
 app.listen(PORT, () => {
   console.log(`Server is running.`);

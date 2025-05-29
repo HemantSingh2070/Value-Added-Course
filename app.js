@@ -1,12 +1,13 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-require("dotenv").config();
+import express from "express";
+import mongoose from "mongoose";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const homeRouter = require("./routes/home");
-const formRouter = require("./routes/form");
+import homeRouter from "./routes/home.js";
+import formRouter from "./routes/form.js";
 
 // Body parser middleware
 app.use(bodyParser.json());
